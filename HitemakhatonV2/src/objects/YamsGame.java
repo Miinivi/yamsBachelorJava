@@ -1,27 +1,29 @@
 package objects;
 
-import java.util.Random;
-
 public class YamsGame {
-
-	private Player player;
-	private int nbPlayers;
-
-	public YamsGame(Player player, int nbPlayers) {
-		super();
-		this.player = player;
-		this.nbPlayers = nbPlayers;
-	}
-
-	public int[] launchDice() {
-		int[] dice = new int[5];
-		Random r = new Random();
-
-		for (int i = 0; i < 5; i++) {
-			dice[i] = 1 + r.nextInt(6);
-			System.out.print(dice[i] + " ");
-		}
-		return dice;
-	}
-
+	private String playerOne;
+	private String playerTwo;
+	// First part of score sheet
+	private Integer nbOfOne;
+	private Integer nbOfTwo;
+	private Integer nbOfThree;
+	private Integer nbOfFour;
+	private Integer nbOfFive;
+	private Integer nbOfSix;
+	// Total of first part
+	private Integer totalFirstPart;
+	// Bonus ? 
+	private Integer bonusIfBigTotal;
+	// Second part of score sheet
+	private Integer brelan;
+	private Integer carre;
+	private Integer full;
+	private Integer ptSuite;
+	private Integer gdSuite;
+	private Integer yams;
+	private Integer chance;
+	private Integer totalSecondPart;
+	// Final
+	private Integer totalTotal;
+	
 }
